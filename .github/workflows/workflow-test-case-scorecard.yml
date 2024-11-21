@@ -9,7 +9,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        ref: ${{ github.event.pull_request.head.sha }}
+        # ref: ${{ github.event.pull_request.head.sha }}
+        ref: ea2d3db900d77737dfed73d42e97998a8b58d2c8
     - name: Check PR title
       run: |
         title="${{ github.event.pull_request.title }}"
